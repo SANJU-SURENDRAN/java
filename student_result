@@ -4,45 +4,50 @@ import java.util.Scanner;
 
 class student
 {
+  String Name;
+  String Course;
+  int RollNo;
   void getdetails()
   {
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter the Name : ");
+    Name = sc.nextLine();
     System.out.print("Enter the Course Name :");
-    String Name = sc.nextLine();
-    String Course = sc.nextLine();
+    Course = sc.nextLine();
     System.out.print("Enter the RollNo :");
-    int RollNo = sc.nextInt();
+    RollNo = sc.nextInt();
   }
   void displaydetails()
   {
-    System.out.println("Name = " + Name);
-    System.out.println("Course = " + Course);
-    System.out.println("RollNo = " + RollNo);   
+    System.out.println("Name = " +Name);
+    System.out.println("Course = " +Course);
+    System.out.println("RollNo = " +RollNo);   
   }
 }
 
 class mark extends student
 {
+  int M1,M2,M3,M4,M5;
   void getmark()
   {
+    Scanner sc = new Scanner(System.in);
     System.out.print("Enter Mark1 : ");
-    int M1 = sc.nextInt();
+    M1 = sc.nextInt();
     System.out.print("Enter Mark2 : ");
-    int M2 = sc.nextInt();
+    M2 = sc.nextInt();
     System.out.print("Enter Mark3 : ");
-    int M3 = sc.nextInt();
+    M3 = sc.nextInt();
     System.out.print("Enter Mark4 : ");
-    int M4 = sc.nextInt();
+    M4 = sc.nextInt();
     System.out.print("Enter Mark5 : ");
-    int M5 = sc.nextInt();
+    M5 = sc.nextInt();
   }
   void calculate()
   {
     int Total = M1+M2+M3+M3+M4+M5;
-    System.out.print("Total = " + Total);
+    System.out.print("Total = " +Total);
     int Average = Total/5;
-    System.out.print("Average = " + Average);
+    System.out.print("Average = " +Average);
   }
 }
 
@@ -58,3 +63,5 @@ class student_result
      M.calculate();
    }
 }
+
+ 
