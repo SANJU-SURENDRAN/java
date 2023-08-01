@@ -1,0 +1,60 @@
+/* PROGRAM NO 13 */
+
+import java.util.Scanner;
+
+class student
+{
+  void getdetails()
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the Name : ");
+    System.out.print("Enter the Course Name :");
+    String Name = sc.nextLine();
+    String Course = sc.nextLine();
+    System.out.print("Enter the RollNo :");
+    int RollNo = sc.nextInt();
+  }
+  void displaydetails()
+  {
+    System.out.println("Name = " + Name);
+    System.out.println("Course = " + Course);
+    System.out.println("RollNo = " + RollNo);   
+  }
+}
+
+class mark extends student
+{
+  void getmark()
+  {
+    System.out.print("Enter Mark1 : ");
+    int M1 = sc.nextInt();
+    System.out.print("Enter Mark2 : ");
+    int M2 = sc.nextInt();
+    System.out.print("Enter Mark3 : ");
+    int M3 = sc.nextInt();
+    System.out.print("Enter Mark4 : ");
+    int M4 = sc.nextInt();
+    System.out.print("Enter Mark5 : ");
+    int M5 = sc.nextInt();
+  }
+  void calculate()
+  {
+    int Total = M1+M2+M3+M3+M4+M5;
+    System.out.print("Total = " + Total);
+    int Average = Total/5;
+    System.out.print("Average = " + Average);
+  }
+}
+
+class student_result
+{
+  public static void main(String args[])
+   {
+     mark M = new mark();
+   
+     M.getdetails();
+     M.displaydetails();
+     M.getmark();
+     M.calculate();
+   }
+}
