@@ -13,11 +13,14 @@ class Fibo
     
       for(int i=1;i<=n;i++)
          {
-           System.out.print(FT + ", ");
-
-           int NT = FT + ST;
-           FT = ST;
-           ST = NT;
+           if( FT < n )
+           {
+              System.out.print(FT + ", ");
+  
+              int NT = FT + ST;
+              FT = ST;
+              ST = NT;
+           }
          }
     }
 }
