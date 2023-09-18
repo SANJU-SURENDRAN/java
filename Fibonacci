@@ -9,17 +9,17 @@ class Fibo
       System.out.print("Enter the Limit :");
       int n = sc.nextInt();
       int FT=0,ST=1;
-      System.out.println("Fibonacci Series upto " + n +" is : ");
-    
+      System.out.println("Fibonacci Series upto " + n  + " is : ");
+      int NT = 0;
       for(int i=1;i<=n;i++)
          {
-           if( FT < n )
+           if( FT <= n )
            {
-              System.out.print(FT + ", ");
-  
-              int NT = FT + ST;
-              FT = ST;
-              ST = NT;
+             System.out.print(FT + ", ");
+
+             NT = FT + ST;
+             FT = ST;
+             ST = NT;
            }
          }
     }
