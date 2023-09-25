@@ -26,7 +26,8 @@ class Triangle
      {
         System.out.println("the given triangle is Scalene");
      } 
-     int s = (a+b+c)/2;
+     double Perimeter = a + b + c;
+     double s = Perimeter/2;
      double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
      System.out.print("Area = "+area);
    }
