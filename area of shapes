@@ -19,7 +19,6 @@ class Square extends TwoDim {
         this.side = side;
     }
 
-    @Override
     double calculateArea() {
         return side * side;
     }
@@ -34,7 +33,6 @@ class Triangle extends TwoDim {
         this.height = height;
     }
 
-    @Override
     double calculateArea() {
         return 0.5 * base * height;
     }
@@ -47,7 +45,6 @@ class Sphere extends ThreeDim {
         this.radius = radius;
     }
 
-    @Override
     double calculateArea() {
         return 4 * Math.PI * radius * radius;
     }
@@ -60,7 +57,6 @@ class Cube extends ThreeDim {
         this.side = side;
     }
 
-    @Override
     double calculateArea() {
         return 6 * side * side;
     }
